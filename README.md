@@ -169,7 +169,7 @@ While natural persons represent 83% of cases, legal entities (NIT) are expected 
 
 ## 👤 Author
 
-**[Your Name]**
+**[Carol Ladino]**
 Data Analyst — Secretaría de Hacienda Distrital, Bogotá
 [LinkedIn] · [GitHub]
 
