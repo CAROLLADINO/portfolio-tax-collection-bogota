@@ -1,0 +1,5 @@
+*.rds
+*.txt
+data/
+CARTERA_MAR_26*
+00_null_report.csv
