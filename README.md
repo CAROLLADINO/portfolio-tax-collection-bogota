@@ -1,5 +1,5 @@
 # 📊 Coercive Tax Collection Portfolio — Characterization Analysis
-**Secretaría de Hacienda Distrital — Bogotá, Colombia**
+**Distrito — Bogotá, Colombia**
 
 ![R](https://img.shields.io/badge/Language-R-276DC3?style=flat&logo=r)
 ![Status](https://img.shields.io/badge/Status-Complete-27ae60?style=flat)
@@ -170,10 +170,10 @@ While natural persons represent 83% of cases, legal entities (NIT) are expected 
 ## 👤 Author
 
 **[Carol Ladino]**
-Data Analyst — Secretaría de Hacienda Distrital, Bogotá
+Data Analyst — Distrito, Bogotá
 [LinkedIn] · [GitHub]
 
 ---
 
 *Data is anonymized. No personal information is present in this repository.*
-*Analysis performed on March 2026 snapshot (CARTERA_MAR_26).*
+*Analysis performed on March 2026 snapshot.*
