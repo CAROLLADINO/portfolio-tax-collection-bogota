@@ -158,9 +158,32 @@ While natural persons represent 83% of cases, legal entities (NIT) are expected 
 
 ---
 
-## ✅ Completed
+## 📈 Time Series Analysis — Collection Seasonality & Trend
 
-- [x] **Time series decomposition** of monthly collection (36 months) — identified July seasonality driven by property/vehicle tax deadlines, and confirmed a positive underlying trend in collection performance (collection rate increased from 60.32% to 81.72%, December 2022 vs. December 2024).
+To understand whether apparent monthly spikes in collection reflected real 
+performance improvements or predictable calendar effects, the monthly 
+collection series (36 months) was decomposed into **trend**, **seasonality**, 
+and **residual** components using classical decomposition in base R.
+
+### Finding — July seasonality vs. real trend growth
+
+A clear seasonal spike appears every July, driven by the statutory deadline 
+for property (*predial*) and vehicle tax payments — this is a calendar effect, 
+not a change in collection management performance.
+
+![Time series decomposition](plots/decomposicion_series_tiempo.png)
+
+Once the seasonal effect is isolated, the underlying trend confirms a **real, 
+sustained improvement**: comparing the same month year-over-year (December, 
+to remove the July effect), the collection rate increased from **60.32% 
+(Dec 2022) to 81.72% (Dec 2024)** — a gain of over 20 percentage points.
+
+![Monthly collection rate](plots/collection_rate_mensual.png)
+
+**Business implication:** raw month-to-month comparisons can be misleading in 
+tax collection reporting. Decomposing the series into trend and seasonality 
+is necessary to distinguish real performance gains from predictable calendar 
+effects tied to statutory payment deadlines.
 
 ## 🔜 Next Steps
 
