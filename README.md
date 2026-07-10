@@ -1,5 +1,5 @@
 # 📊 Coercive Tax Collection Portfolio — Characterization Analysis
-**Secretaría de Hacienda Distrital — Bogotá, Colombia**
+**Distrito — Bogotá, Colombia**
 
 ![R](https://img.shields.io/badge/Language-R-276DC3?style=flat&logo=r)
 ![Status](https://img.shields.io/badge/Status-Complete-27ae60?style=flat)
@@ -158,34 +158,26 @@ While natural persons represent 83% of cases, legal entities (NIT) are expected 
 
 ---
 
+## ✅ Completed
+
+- [x] **Time series decomposition** of monthly collection (36 months) — identified July seasonality driven by property/vehicle tax deadlines, and confirmed a positive underlying trend in collection performance (collection rate increased from 60.32% to 81.72%, December 2022 vs. December 2024).
+
 ## 🔜 Next Steps
 
 - [ ] **Project 8:** Scoring model for specialized collection prioritization (ML)
 - [ ] **Project 9:** Process efficiency analysis — time between legal stages
-- [ ] Power BI dashboard connecting to clean `.rds` output
+- [ ] Power BI dashboard connecting to clean output (`cartera_procesada.csv`)
 - [ ] Incorporate additional months for longitudinal comparison
-
 ---
 
 ## 👤 Author
 
-**[Your Name]**
-Data Analyst — Secretaría de Hacienda Distrital, Bogotá
+**[Carol Ladino]**
+Data Analyst — Distrito, Bogotá
 [LinkedIn] · [GitHub]
 
 ---
 
 *Data is anonymized. No personal information is present in this repository.*
-*Analysis performed on March 2026 snapshot (CARTERA_MAR_26).*
 
-## Completed
-- [x] Time series decomposition of monthly collection (36 months) — identified 
-      July seasonality driven by property/vehicle tax deadlines, and confirmed 
-      a positive underlying trend in collection performance (collection rate 
-      increased from 60.32% to 81.72%, December 2022 vs. December 2024).
-
-## Next Steps
-- [ ] Project 8: Scoring model for specialized collection prioritization (ML)
-- [ ] Project 9: Process efficiency analysis — time between legal stages
-- [ ] Power BI dashboard connecting to clean output (`cartera_procesada.csv`)
-- [ ] Incorporate additional months for longitudinal comparison
+*Analysis performed on March 2026 snapshot.*
