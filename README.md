@@ -185,9 +185,35 @@ tax collection reporting. Decomposing the series into trend and seasonality
 is necessary to distinguish real performance gains from predictable calendar 
 effects tied to statutory payment deadlines.
 
+## 🎯 Scoring Model — Collection Prioritization (Exploratory)
+
+To support prioritization of collection efforts, a classification model was 
+built to predict whether a debtor would **sustain payment** on a payment 
+agreement (first payment made and no default within the first 3 months) — 
+deliberately avoiding "reached payment order" as a target, since that would 
+only replicate past human prioritization decisions rather than predict a 
+genuine business outcome.
+
+**Approach:** simulated dataset (5,000 cases) with debt amount (log-transformed, 
+given its non-linear relationship with payment behavior), debt age, tax type, 
+and debtor type as predictors. Random Forest classifier, trained with a 
+stratified 80/20 split.
+
+**Result:** the model achieved a ROC-AUC of 0.55 — barely above random chance. 
+Given that the simulated target intentionally combined a weak signal (debt 
+amount) with substantial random noise, this result is an honest and expected 
+outcome: it correctly reflects that, under this data-generating process, 
+there isn't a strong learnable pattern beyond what was designed in — a useful 
+reminder that **a low ROC-AUC is not always a modeling failure; sometimes it 
+correctly signals irreducible noise in the underlying data**.
+
+**Next step:** re-run this approach on richer features (e.g. prior payment 
+history, agreement type) once real data is available — variables genuinely 
+informative about payment behavior, rather than a single simulated driver.
+
 ## 🔜 Next Steps
 
-- [ ] **Project 8:** Scoring model for specialized collection prioritization (ML)
+- [x] **Project 8:** Scoring model for specialized collection prioritization (ML)
 - [ ] **Project 9:** Process efficiency analysis — time between legal stages
 - [ ] Power BI dashboard connecting to clean output (`cartera_procesada.csv`)
 - [ ] Incorporate additional months for longitudinal comparison
